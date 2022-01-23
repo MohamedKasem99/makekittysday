@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.js"></script>
+    <script src="https://unpkg.com/delaunay-fast@1"></script>
+    <script src="https://unpkg.com/abo-utils@0.3"></script>
+    <script src="https://unpkg.com/drag-tracker@1"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>معلش القطة</h1>
+    </header>
+
+    <svg width="0" height="0" style="position:absolute;">
+        <defs>
+            <radialGradient id="point-grad">
+                <stop offset="80%" stop-color="transparent" />
+                <stop offset="81%" stop-color="white" />
+            </radialGradient>
+        </defs>
+    </svg>
+
+    <section class='metrics'>
+        <span class="unit">معلش / الثانية</span> <span class="number" id="cps">0.00</span>
+        <br>
+        <span class="unit">توتال معلش </span><span class="number" id="totalMa3lish">0</span>
+    </section>
+    <section id="app">
+
+        <div id="apply" class="group">
+            <div id="morph">
+                <canvas id="c1" :width="state.size.w" :height="state.size.h"></canvas>
+                <canvas id="c2" :width="state.size.w" :height="state.size.h"></canvas>
+            </div>
+        </div>
+
+    </section>
+    <div class="easteregg">
+        <div>🥰</div>
+    </div>
+    <button id="m3lish_btn">معلش يا قطة</button>
+    <script src="index.js"></script>
+</body>
+
+</html>

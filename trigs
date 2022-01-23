@@ -1,0 +1,2 @@
+tri1: new Triangulator(_size, [{"coord":[103,99]},{"coord":[135,99]},{"coord":[77,93]},{"coord":[138,61]},{"coord":[85,58]},{"coord":[107,75]},{"coord":[117,37]},{"coord":[123,79]},{"coord":[93,78]},{"coord":[126,61]},{"coord":[69,56]}]),
+tri2: new Triangulator(_size, [{"coord":[103,99]},{"coord":[135,86]},{"coord":[71,78]},{"coord":[145,61]},{"coord":[86,56]},{"coord":[107,75]},{"coord":[117,37]},{"coord":[126,78]},{"coord":[91,75]},{"coord":[126,61]},{"coord":[69,56]}]),

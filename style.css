@@ -1,0 +1,209 @@
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    5% {
+        animation-timing-function: ease-in;
+        transform: translateY(-30px);
+    }
+    15% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateY(-38px);
+    }
+    38% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    52% {
+        animation-timing-function: ease-in;
+        transform: translateY(-75px);
+    }
+    70% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+}
+
+@keyframes swirlInAnim {
+    0% {
+        opacity: 0;
+        transform: rotate(-540deg) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes slideInAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceOutAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    5% {
+        animation-timing-function: ease-in;
+        transform: translateY(-30px);
+    }
+    15% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateY(-38px);
+    }
+    38% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    52% {
+        animation-timing-function: ease-in;
+        transform: translateY(-75px);
+    }
+    70% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Almarai', sans-serif;
+    background: #F9EAE1;
+}
+
+header {
+    background: #7D4F50;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    color: #F9EAE1;
+    text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+    animation: fadeInAnim 1s ease 0s 1 normal none;
+}
+
+body button {
+    font-family: 'Almarai', sans-serif;
+    animation: slideInAnim 1s ease 0s 1 normal forwards;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #CC8B86;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #daa09c
+}
+
+button:active {
+    background-color: #d37f79;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#app {
+    text-align: center;
+    padding: 0.5em 0;
+    animation: swirlInAnim 1s ease 0s 1 normal none;
+}
+
+#app .group {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.5em 0.8em;
+}
+
+#app #morph {
+    position: relative;
+    display: table;
+}
+
+#app #morph canvas+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.easteregg {
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.easteregg.fade-in {
+    animation: fadeInAnim 1s ease 0s 1 normal forwards;
+}
+
+.easteregg.fade-out {
+    animation: bounceOutAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.metrics {
+    margin: 10px auto;
+    padding: 1%;
+    text-align: center;
+    display: block;
+    background-color: lightskyblue;
+    border-radius: 15px;
+    font-size: 100%;
+    width: max-content;
+}
+
+.unit {
+    margin: 1em 1em;
+}
+
+.number {
+    margin: 1em 1em;
+}
