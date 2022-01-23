@@ -173,7 +173,7 @@ function warpImage(img, triSource, triTarget, canvas, lerpT) {
             now = Date.now();
             cpsValue = (clickCount / (now - lastClick) * 100).toFixed(2);
             updateCPS();
-        }, 100);
+        }, 5);
     }
 
     function resetClickCount() {
@@ -281,10 +281,10 @@ function warpImage(img, triSource, triTarget, canvas, lerpT) {
                         smileAmount = Math.min(smileAmount, 0.9)
                         smileAmount += 0.005
                     } else {
-                        smileAmount = Math.max(smileAmount, 0.01)
-                        smileAmount -= 0.01
+                        smileAmount = Math.max(smileAmount, 0.05)
+                        smileAmount -= 0.02
                     }
-                    if (cpsValue > 18) { easterEggsExplosion(); }
+                    if (smileAmount > 0.85) { easterEggsExplosion(); }
                     //30fps is more than enough:
                     skip = !skip;
                     if (skip) { return; }
