@@ -284,7 +284,7 @@ function warpImage(img, triSource, triTarget, canvas, lerpT) {
                         smileAmount = Math.max(smileAmount, 0.01)
                         smileAmount -= 0.01
                     }
-                    if (cpsValue > 10) { easterEggsExplosion(); }
+                    if (cpsValue > 18) { easterEggsExplosion(); }
                     //30fps is more than enough:
                     skip = !skip;
                     if (skip) { return; }
